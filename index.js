@@ -1,14 +1,7 @@
-//make a function with the name "download" that downloads the content of the textarea as a json file
-function download() {
-    //get the content of the textarea
-    var text = document.getElementById("json-input").value;
-    //make a blob with the content of the textarea
-    var blob = new Blob([text], {type: "text/json;charset=utf-8"});
-    //save the blob as a file
-    saveAs(blob, "data.json");
-    }
 
-function saveAs(blob, fileName) {
+function saveJSON(object, fileName) {
+    var json = JSON.stringify(object);
+    var blob = new Blob([json], {type: "text/json;charset=utf-8"});
     var link = document.createElement("a");
     if (link.download !== undefined) {
         var url = URL.createObjectURL(blob);
@@ -19,4 +12,14 @@ function saveAs(blob, fileName) {
         link.click();
         document.body.removeChild(link);
     }
+}
+
+function download(){
+    var object = {
+        name: document.getElementById("input-name").value,
+        description: document.getElementById("input-description").value,
+        hasTeams: document.getElementById("input-teams").value
+    }
+    var fileName = document.getElementById("input-game-id").value + ".json";
+    saveJSON(object, fileName);
 }

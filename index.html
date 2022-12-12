@@ -4,15 +4,19 @@
     <header>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
         <script src="index.js" defer></script>
         <title>JSON TEST</title>
     </header>
-    <body>
-        <!-- create a input field with id "json-input" -->
-        <textarea id="json-input" rows="10" cols="50"></textarea>
-        <button onclick="download()">DOWNLOAD JSON</button>
+    <body class="bg-dark text-white p-2">
+        <div class="container bg-dark text-white p-2">
+            <input class="form-control my-1" type="text" name="game-id" id="input-game-id" placeholder="gamemode id (no spaces)">
+            <input class="form-control my-1" type="text" name="name" id="input-name" placeholder="gamemode name">
+            <textarea class="form-control my-1" name="description" id="input-description" cols="30" rows="5" placeholder="description"></textarea>
+            <input type="checkbox" name="HAS TEAMS" id="input-teams">
+            <label for="input-teams" class="form-label">HAS TEAMS?</label>
+            <button class="btn btn-success my-1" onclick="download()">DOWNLOAD JSON</button>
+        </div>
     </body>
 </html>
