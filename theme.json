@@ -1,0 +1,71 @@
+{
+  "blockStyles" : {
+    "logic_blocks": {
+      "colourPrimary": "#59c059",
+      "colourSecondary":"#389438"
+    },
+    "list_blocks": {
+      "colourPrimary": "#4cbfe6",
+      "colourSecondary":"#47a8d1"
+    },
+    "colour_blocks": {
+      "colourPrimary": "#9966ff",
+      "colourSecondary":"#855cd6"
+    },
+    "text_blocks": {
+      "colourPrimary": "#d65cd6",
+      "colourSecondary":"#c94fc9"
+    },
+    "variable_blocks": {
+      "colourPrimary": "#ff8c1a",
+      "colourSecondary":"#e6791e"
+    },
+    "procedure_blocks": {
+      "colourPrimary": "#ff4d6a",
+      "colourSecondary":"#ff6680"
+    },
+    "loewetag_blocks": {
+      "colourPrimary": "#ff0000",
+      "colourSecondary":"#ff0000"
+    },
+    "math_blocks": {
+      "colourPrimary": "#59c059",
+      "colourSecondary":"#389438"
+    },
+    "loop_blocks": {
+      "colourPrimary": "#ffab19",
+      "colourSecondary":"#cf8b17"
+    }
+    
+  },
+  "categoryStyles" : {
+    "operators_category": {
+      "colour": "#59c059"
+    },
+    "control_category": {
+      "colour": "#ffab19"
+    },
+    "text_category": {
+      "colour": "#d65cd6"
+    },
+    "list_category": {
+      "colour": "#4cbfe6"
+    },
+    "colour_category": {
+      "colour": "#9966ff"
+    },
+    "variable_category": {
+      "colour": "#ff8c1a"
+    },
+    "procedure_category": {
+      "colour": "#ff4d6a"
+    },
+    "loewetag_category": {
+      "colour": "#ff0000"
+    }
+  },
+  "componentStyles" : {
+    "workspaceBackgroundColour": "#1e1e1e",
+    "toolboxBackgroundColour": "#333333"
+  }
+}
